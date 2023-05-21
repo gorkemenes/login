@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/AdText"
+        android:layout_width="417dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:text="GETİRME"
+        android:textColor="#673AB7"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="298dp"
+        android:layout_height="279dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.658"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363">
+
+        <EditText
+            android:id="@+id/AdSoyad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ad-Soyad:"
+            android:inputType="textPersonName"
+            android:padding="30dp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/Sifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Şifre:"
+            android:inputType="textPassword"
+            android:padding="30dp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/tekrarsifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Tekrar Şifre:"
+            android:inputType="textPassword"
+            android:padding="30dp"
+            android:textColorHint="#000000" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageperson"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="244dp"
+        app:layout_constraintBottom_toTopOf="@+id/kayıtol"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AdText"
+        app:srcCompat="@drawable/person" />
+
+    <ImageView
+        android:id="@+id/imagemail"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagesifre"
+        app:layout_constraintVertical_bias="0.031"
+        app:srcCompat="@drawable/mail_svgrepo_com" />
+
+    <ImageView
+        android:id="@+id/imagesifre"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageperson"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/lock_svgrepo_com" />
+
+    <Button
+        android:id="@+id/kayıtol"
+        android:layout_width="156dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/girisbutonrengi"
+        android:text="Kayıt Ol"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/girisyap"
+        android:layout_width="156dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/girisbutonrengi"
+        android:text="Giriş Yap"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/kayıtol"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageButton
+        android:id="@+id/facebutton"
+        android:layout_width="84dp"
+        android:layout_height="83dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="44dp"
+        android:background="#FFFCFC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/instabutton"
+        app:layout_constraintTop_toBottomOf="@+id/girisyap"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/lineararkaplan" />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="85dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/instagram"
+        app:srcCompat="@drawable/facebook_1_svgrepo_com" />
+
+    <ImageButton
+        android:id="@+id/instabutton"
+        android:layout_width="85dp"
+        android:layout_height="87dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/lineararkaplan" />
+
+    <ImageView
+        android:id="@+id/instagram"
+        android:layout_width="92dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/instagram_1_svgrepo_com" />
+
+    <ImageButton
+        android:id="@+id/twitterbutton"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/instagram"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/lineararkaplan" />
+
+    <ImageView
+        android:id="@+id/twitter"
+        android:layout_width="90dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/instabutton"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/twitter_color_svgrepo_com" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="75dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shopping" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="143dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="48dp"
+        android:text="Eve Getirmem , Gel Al"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

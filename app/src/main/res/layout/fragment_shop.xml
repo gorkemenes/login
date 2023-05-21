@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/textmeyvesebze"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:src="@drawable/meyvesebzee" />
+
+        <TextView
+            android:id="@+id/meyvesebze"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:text="MEYVE-SEBZE"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/fırın"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="169dp"
+            android:src="@drawable/bread" />
+        <TextView
+            android:id="@+id/textfırın"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:text="FIRIN"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/kasap"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:src="@drawable/meat" />
+
+
+        <TextView
+            android:id="@+id/textkasap"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:text="KASAP"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/hazırgıda"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:src="@drawable/pasta" />
+
+
+        <TextView
+            android:id="@+id/texthazırgıda"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:text="HAZIR GIDA"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/baby"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:src="@drawable/baby" />
+
+
+        <TextView
+            android:id="@+id/textbaby"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:text="BEBEK BEZİ"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
+
+   </FrameLayout>
+
+
+
